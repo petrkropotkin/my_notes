@@ -1,0 +1,49 @@
+﻿  git init ==> initialize Working directory/creates a new Git repository
+
+  git status ==> inspects the contents of the working directory and staging area
+  
+A Git project can be thought of as having three parts:
+1)A Working Directory: where you'll be doing all the work: creating, editing, deleting and organizing files
+2)A Staging Area: where you'll list changes you make to the working directory
+3)A Repository: where Git permanently stores those changes as different versions of the project
+
+  git add filename ==> adds files from the working directory to the staging area
+  git diff filename ==> shows the difference between the working directory and the staging area 
+  git commit -m "some info about commit" ==> permanently stores file changes from the staging area in the repository
+  git log ==> shows a list of all previous commits //a SHA,the commit author,the date and time of the commit,the commit message
+
+git show HEAD  ?
+
+3 different ways to backtrack in Git:
+  git checkout HEAD filename ==> Discards changes in the working directory.
+  git reset HEAD filename ==> Unstages file changes in the staging area
+  git reset commit_SHA(the first 7 characters) ==> Resets to a previous commit in your commit history.
+
+3_GIT BRANCHING
+Git branching allows users to experiment with different versions of a project
+by checking out separate branches to work on
+
+  git branch ==> Lists all a Git project's branches.
+  git branch branch_name ==> Creates a new branch.
+  git checkout branch_name ==> Used to switch from one branch to another.
+  git merge branch_name ==> Used to join file changes from one branch to another
+
+merge conflict:
+<<<<<<< HEAD
+master version of line
+=======
+fencing version of line
+>>>>>>> fencing
+
+
+  git branch -d branch_name ==> Deletes the branch specified.
+
+
+
+
+
+
+
+
+
+
