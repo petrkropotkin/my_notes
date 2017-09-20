@@ -38,13 +38,19 @@ fencing version of line
   git branch -d branch_name ==> Deletes the branch specified.
 
 4_GIT TEAMWORK
-git clone remote_location clone_name
+A remote is a Git repository that lives outside your Git project folder.
+Remotes can live on the web, on a shared network or even in a separate folder on your local computer.
+
+git clone remote_location clone_name ==>Creates a local copy of a remote.
  remote_location --> tells Git where to go to find the remote. This could be a web address, or a filepath, such as:
  /Users/teachers/Documents/some-remote
  clone_name --> is the name you give to the directory in which Git will clone the repository.
-git remote -v
-git fetch
-git merge origin/master
+git remote -v ==>Lists a Git project's remotes.
+git fetch==> Fetches work from the remote into the local copy.
+git merge origin/master ==>Merges origin/master into your local branch.
+
+git push origin <branch_name>==> Pushes a local branch to the origin remote.
+Git projects are usually managed on Github
 
 
 
