@@ -35,8 +35,16 @@ master version of line
 fencing version of line
 >>>>>>> fencing
 
-
   git branch -d branch_name ==> Deletes the branch specified.
+
+4_GIT TEAMWORK
+git clone remote_location clone_name
+ remote_location --> tells Git where to go to find the remote. This could be a web address, or a filepath, such as:
+ /Users/teachers/Documents/some-remote
+ clone_name --> is the name you give to the directory in which Git will clone the repository.
+git remote -v
+git fetch
+git merge origin/master
 
 
 
